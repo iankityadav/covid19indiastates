@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+        body {
+            font-family:"Muli",monospace;
+        }
+    </style>
+</head>
+<body class="antialiased bg-gray-200">
+    <header class="bg-red-400 w-full fixed top-0 text-center">
+        <div class="flex flex-row items-center py-2 justify-center">
+            <img src="https://img.icons8.com/color/1600/coronavirus.png" class="w-16 h-16">
+            <div class="text-xl sm:text-2xl md:text-2xl text-gray-100 font-bold">Corona Virus Cases</div>
+        </div>
+      </header>
+    
+    <div class="min-h-screen mt-20 md:mt-16 sm:mt-16 ">
+        <div class="container mx-auto p-6 max-w-screen-lg">
+        <div class="bg-gray-100 rounded-lg shadow-lg p-6">
+            <div class="text-2xl lg:text-3xl border-b-2 border-indigo-600 py-2 text-gray-800">INDIA</div>
+            <div class="flex flex-col sm:flex-row md:flex-row items-center my-6 justify-center">
+
+            <div class="bg-orange-300 flex w-24 lg:w-1/4 xl:w-1/4 h-auto m-2 p-2 rounded">
+            <div class=" text-sm text-gray-700"> Total cases
+                <div id="a" class="text-xl text-black">...</div></div>
+            </div>
+
+            <div class="bg-blue-400 flex w-24 lg:w-1/4 xl:w-1/4 h-auto m-2 p-2 rounded">
+                <div class=" text-sm text-gray-700"> Active cases
+                    <div id="b" class="text-xl text-black"></div></div>
+            </div>
+            
+            <div class="bg-red-400 flex w-24 lg:w-1/4 xl:w-1/4 h-auto m-2 p-2 rounded">
+            <div class=" text-sm text-gray-700"> Total deaths
+                <div id="c" class="text-xl text-black">...</div></div>
+            </div>
+            
+            <div class="bg-green-400 flex w-24 lg:w-1/4 xl:w-1/4 h-auto m-2 p-2 rounded">
+            <div class=" text-sm text-gray-700"> Total recovered
+                <div id="d" class="text-xl text-black">...</div></div>
+            </div>
+            
+            </div>
+            
+            <div class="text-xl text-gray-800 mt-2 py-2">State Wise Reports</div>  
+                        <label class="block uppercase tracking-wide text-gray-700" for="grid-first-name">
+              Choose State:
+              <select class="ml-3 text-sm bg-purple-500 border border-purple-200 text-white p-2 rounded leading-tight" id="select">
+              </select>
+            </label>
+            <div id="s" class="py-4"></div>
+                        <div class="flex sm:flex-col lg:flex-row">
+            <div class="bg-orange-300 flex w-24 h-auto m-2 p-2 rounded">
+            <div class=" text-sm text-gray-700"> Total cases
+                <div id="s1" class="text-xl text-black"></div></div>
+            </div>
+            
+            <div class="bg-red-400 flex w-24 h-auto m-2 p-2 rounded">
+            <div class=" text-sm text-gray-700"> Total deaths
+                <div id="s2" class="text-xl text-black"></div></div>
+            </div>
+            
+            <div class="bg-green-400 flex w-28 h-auto m-2 p-2 rounded">
+            <div class=" text-sm text-gray-700"> Total recovered
+                <div id="s3" class="text-xl text-black"></div></div>
+            </div>
+            
+            
+            </div>
+            
+        </div></div></div>
+        
+       <div class="container mx-auto">
+        <div class="flex mx-auto  p-6 max-w-screen-lg">
+            <div class="flex mx-auto bg-green-200 items-center justify-center rounded-lg shadow-lg p-2">
+                <img src="https://cdn2.iconfinder.com/data/icons/coronavirus-how-to-protect-yourself-1/512/MaskFemale007-512.png" class="h-40 w-40">
+                <div class="flex justify-center items-center">
+                    <div class="text-2xl text-gray-700 px-2 mb-4">#StaySafe<br/>#StayHome</div>
+                </div>
+            </div>
+        </div></div> 
+       
+        <div class="mx-auto bg-gray-400 mt-4">
+            <div class="flex mx-auto p-2">
+                <div class="flex flex-col items-center justify-center  mx-auto w-1/2">
+                    <div class="text-xl text-gray-700">Ankit Yadav</div>
+                    <div class="text-xl text-center my-2">
+                        <a href="https://www.facebook.com/1002ankitKumar"><i class="fab fa-facebook px-2 hover:text-blue-500 text-blue-700"></i></a>
+                        <a href="https://instagram.com/i_ankit_yadav_"><i class="fab fa-instagram px-2 hover:text-red-400 text-red-600"></i></a>
+                        <a href="https://github.com/1002ankit"><i class="fab fa-github px-2 hover:text-gray-600"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
