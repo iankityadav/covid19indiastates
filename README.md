@@ -1,6 +1,6 @@
 # covid19indiastates
 <b>Watch it live in action here</b>
-<a href='https://iankityadav.github.io/covid19indiastates/'></a>
+https://iankityadav.github.io/covid19indiastates
 
 covid-19 Live Stats for Indian States UI 
 
