@@ -1,12 +1,16 @@
 $.ajax({
-    url: 'https://api.thevirustracker.com/free-api?countryTotal=IN',
+    url: 'https://api.rootnet.in/covid19-in/stats/latest',
     dataType: 'json',
     success: function(data) {
       $(document).ready(function(){
-     $("#a").text(data.countrydata[0].total_cases)
-     $("#b").text(data.countrydata[0].total_active_cases)
-     $("#c").text(data.countrydata[0].total_deaths)
-     $("#d").text(data.countrydata[0].total_recovered)
+          var total = data.data.summary.total
+          var deaths = data.data.summary.deaths
+          var discharged = data.data.summary.discharged
+          var active = total-(discharged+deaths)
+          $("#a").text(total)
+          $("#b").text(active)
+          $("#c").text(deaths)
+          $("#d").text(discharged)
   });
     }
   });
